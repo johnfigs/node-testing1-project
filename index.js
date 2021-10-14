@@ -8,8 +8,11 @@
  */
 function trimProperties(obj) {
   // ✨ implement
-  Object.keys(obj).map(k => obj[k] = obj[k].trim());
-  return obj
+  const result = {}
+  for (let prop in obj) {
+    result[prop] = obj[prop].trim()
+  }
+  return result
 }
 
 /**
@@ -22,6 +25,10 @@ function trimProperties(obj) {
  */
 function trimPropertiesMutation(obj) {
   // ✨ implement
+  for (let prop in obj) {
+    obj[prop] = obj[prop].trim()
+  }
+  return obj
 }
 
 /**
