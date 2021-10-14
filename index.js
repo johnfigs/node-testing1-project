@@ -8,6 +8,8 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  Object.keys(obj).map(k => obj[k] = obj[k].trim());
+  return obj
 }
 
 /**
